@@ -43,7 +43,7 @@ const Cart = () => {
   const createCheckout = async () => {
     if (session?.user) {
       const stripe = await stripePromise;
-      const response = await fetch("http://localhost:3000/api/checkout", {
+      const response = await fetch("https://ecom-sanity-v3.vercel.app/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "appication/json" },
         body: JSON.stringify({
