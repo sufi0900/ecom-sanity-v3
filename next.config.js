@@ -1,16 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: ["cdn.sanity.io"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.sanity.io",
-        pathname: "**",
+        hostname: "utfs.io",
       },
       {
         protocol: "https",
-        hostname: "avatars.githubusercontent.com",
-        pathname: "**",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "instagram.fpnq13-1.fna.fbcdn.net",
       },
     ],
   },
